@@ -265,6 +265,11 @@ export default function OFWs() {
                 </div>
               </div>
             </div>
+
+            <div className="mt-12 bg-white border border-border rounded-xl p-5 shadow-sm">
+              <h4 className="text-sm font-bold text-foreground mb-2 flex items-center gap-2"><Shield size={16} className="text-accent" /> Security & Compliance</h4>
+              <p className="text-[13px] text-muted-foreground leading-relaxed">Funds are held in sweep networks of FDIC-insured partner banks. We never invest your money in crypto or volatile assets.</p>
+            </div>
           </div>
         </div>
       </section>

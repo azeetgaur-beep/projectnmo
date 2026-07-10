@@ -68,7 +68,7 @@ export function Footer() {
         </div>
 
         <div className="pt-10 border-t border-border flex flex-col gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 text-[11px] text-muted-foreground/80 leading-relaxed font-medium">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 text-[11px] text-muted-foreground leading-relaxed font-medium">
             <div>
               <p className="font-bold text-muted-foreground mb-1.5 uppercase tracking-[0.1em] text-[10px]">Banking Services</p>
               <p>Mana is a financial technology company, not a bank. Banking services are provided by SSB, Member FDIC. Funds deposited at SSB are eligible for FDIC insurance up to $250,000 per depositor, per insured bank.</p>
@@ -83,7 +83,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4 text-[11px] text-muted-foreground/80 font-medium">
+          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4 text-[11px] text-muted-foreground font-medium">
             <p>© 2026 Mana, Inc. All rights reserved.</p>
             <div className="flex gap-6">
               <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy</Link>

@@ -77,9 +77,19 @@ export default function App() {
             <span className="text-accent">Build wealth across borders.</span>
           </h1>
 
-          <p className="text-[17px] md:text-[22px] text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto mb-16 font-medium">
+          <p className="text-[17px] md:text-[22px] text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto mb-10 font-medium">
             Stop losing your hard work to hidden remittance fees and forced conversions. Get a real US account, keep your earnings in dollars, and send to GCash or any PH bank at the true exchange rate.
           </p>
+          
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground mb-16">
+            <div className="flex items-center gap-2 text-foreground font-bold bg-[#FAFAFA] border border-border px-4 py-2 rounded-full shadow-sm">
+              <span className="text-xs">No SSN required. Open with PH Passport.</span>
+            </div>
+            <div className="flex items-center gap-2 text-foreground font-bold bg-white border border-border px-4 py-2 rounded-full shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span className="text-xs">Member FDIC</span>
+            </div>
+          </div>
 
           {/* CONCRETE MONEY MOVEMENT FLOW */}
           <div className="max-w-4xl mx-auto mb-24 hidden md:flex items-center justify-center gap-4">
@@ -133,7 +143,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-center gap-2 text-sm font-bold text-foreground group-hover:text-accent transition-colors mt-auto pt-4 border-t border-border/30">
-                  See the stack <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  View US Accounts <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
 
@@ -168,7 +178,7 @@ export default function App() {
                 </div>
 
                 <div className="flex items-center gap-2 text-sm font-bold text-foreground group-hover:text-accent transition-colors mt-auto pt-4 border-t border-border/30">
-                  Stop overpaying <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  View Remittance Rates <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             </div>
@@ -181,15 +191,6 @@ export default function App() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-muted-foreground">
-                <div className="flex items-center gap-2 text-foreground font-bold bg-[#F2F2F2] border border-border px-4 py-2 rounded-full shadow-sm">
-                  <span className="text-xs">No SSN required. Open with PH Passport.</span>
-                </div>
-                <div className="flex items-center gap-2 text-foreground font-bold bg-white border border-border px-4 py-2 rounded-full shadow-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                  <span className="text-xs">Member FDIC</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
