@@ -20,77 +20,30 @@ import {
   Shield,
   Sparkles,
   ChevronRight,
+  Briefcase,
+  ShieldAlert
 } from "lucide-react";
 import { Link } from "react-router";
 
 
 
 
-const FEATURES = [
-  {
-    icon: Send,
-    title: "Send money home in minutes",
-    desc: "Real exchange rates. No hidden markups. Your family gets more — every single time.",
-    tag: "Remittance",
-  },
-  {
-    icon: TrendingUp,
-    title: "Save together, grow together",
-    desc: "Set savings goals for tuition, a house, emergencies — and watch them grow from anywhere in the world.",
-    tag: "Savings",
-  },
-  {
-    icon: Users,
-    title: "A wallet your family can use",
-    desc: "Give your loved ones back home a linked wallet. You load it, they spend it. You both see everything.",
-    tag: "Family",
-  },
-  {
-    icon: Globe,
-    title: "Built for where you actually are",
-    desc: "Funding from US, UK, UAE, Singapore, Saudi, Australia — wherever OFWs go, MANA follows.",
-    tag: "Global",
-  },
-];
 
-const TEAM = [
-  {
-    name: "Isabel Reyes",
-    role: "Co-founder & CEO",
-    bio: "Former OFW. Spent 8 years in Dubai watching her remittance fees drain her savings. Built MANA so others don't have to.",
-    initials: "IR",
-    bg: "bg-primary",
-  },
-  {
-    name: "Marco Santos",
-    role: "Co-founder & CTO",
-    bio: "Previously built payments infra at Grab. Knows exactly how broken cross-border money movement is — and how to fix it.",
-    initials: "MS",
-    bg: "bg-accent",
-  },
-  {
-    name: "Joy Villanueva",
-    role: "Head of Growth",
-    bio: "Grew up watching her mother send balikbayan boxes because wire transfers cost too much. That ends with MANA.",
-    initials: "JV",
-    bg: "bg-secondary text-secondary-foreground",
-  },
-];
 
 const INVESTORS = ["Sequoia SEA", "Insignia Ventures", "Plug & Play", "Y-Space Angels"];
 
 const FAQS = [
   {
-    q: "When does MANA launch?",
-    a: "We're targeting a closed beta in Q4 2026. Waitlist members get first access — and a lifetime rate guarantee once we go live.",
+    q: "How long does it take to open an account?",
+    a: "Less than 3 minutes. You can open an account with your Philippine Passport, no SSN required. Your account is active and ready to use immediately.",
   },
   {
-    q: "Which countries will MANA support at launch?",
-    a: "We're starting with the top 6 OFW corridors: UAE, Saudi Arabia, Singapore, USA, UK, and Australia — all sending to the Philippines.",
+    q: "Which countries does MANA support?",
+    a: "We currently support sending money from the USA directly to the Philippines. We are expanding to the UAE, Saudi Arabia, Singapore, UK, and Australia soon.",
   },
   {
     q: "Is my money safe?",
-    a: "Yes. We are applying for BSP registration and money transmission licenses in every country we operate. Your funds are held in regulated, segregated accounts — not our operating capital.",
+    a: "Yes. We are registered and licensed for money transmission. Your funds are held in regulated, segregated accounts with our partner banks — never our operating capital.",
   },
   {
     q: "Will MANA really charge zero markup?",
@@ -100,21 +53,6 @@ const FAQS = [
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [waitlistCount] = useState(2847);
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (email.trim()) {
-      setIsSubmitting(true);
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setSubmitted(true);
-      }, 1500);
-    }
-  }
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans">
@@ -122,9 +60,9 @@ export default function App() {
       <div className="bg-primary text-white text-center py-2.5 px-4">
         <p className="text-xs md:text-sm font-semibold flex items-center justify-center gap-2">
           <Sparkles size={13} className="text-accent" />
-          MANA just closed its seed round — we&apos;re building the financial home for Filipinos abroad.
-          <a href="#waitlist" className="underline underline-offset-2 hover:text-accent transition-colors ml-1">
-            Join the waitlist →
+          MANA is now live in the US and Philippines.
+          <a href="#open-account" className="underline underline-offset-2 hover:text-accent transition-colors ml-1">
+            Open your account today →
           </a>
         </p>
       </div>
@@ -134,16 +72,37 @@ export default function App() {
       {/* HERO */}
       <section className="relative overflow-hidden pt-24 pb-32 md:pt-40 md:pb-40">
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] mb-6 text-foreground max-w-4xl mx-auto font-serif">
-            The financial app built for <br />
-            <span className="text-accent">Filipinos everywhere.</span>
+          <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6 text-foreground max-w-4xl mx-auto font-serif tracking-tight">
+            Earn in dollars. Send in pesos. <br />
+            <span className="text-accent">Build wealth across borders.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-20 font-medium">
-            Real US dollar accounts, high yield savings, a visa card that works globally. Welcome to Mana, your financial home.
+          <p className="text-[17px] md:text-[22px] text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto mb-16 font-medium">
+            Stop losing your hard work to hidden remittance fees and forced conversions. Get a real US account, keep your earnings in dollars, and send to GCash or any PH bank at the true exchange rate.
           </p>
 
-          <div id="waitlist" className="max-w-3xl mx-auto scroll-mt-24">
+          {/* CONCRETE MONEY MOVEMENT FLOW */}
+          <div className="max-w-4xl mx-auto mb-24 hidden md:flex items-center justify-center gap-4">
+             <div className="bg-white border border-border rounded-2xl p-5 flex flex-col items-center shadow-sm w-56 relative overflow-hidden">
+               <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-3">Incoming ACH</span>
+               <span className="text-2xl font-bold font-serif text-foreground">+$3,450.00</span>
+               <span className="text-[11px] text-muted-foreground font-medium mt-1">from Upwork</span>
+             </div>
+             <ArrowRight className="text-muted-foreground/30 flex-shrink-0" size={24} />
+             <div className="bg-white border border-border rounded-2xl p-5 flex flex-col items-center shadow-sm w-56 relative overflow-hidden">
+               <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-3">Mana USD Wallet</span>
+               <span className="text-2xl font-bold font-serif text-foreground">$3,450.00</span>
+               <span className="text-[11px] text-accent font-bold mt-1 bg-accent/10 px-2 py-0.5 rounded-full">Earning 5.1% APY</span>
+             </div>
+             <ArrowRight className="text-muted-foreground/30 flex-shrink-0" size={24} />
+             <div className="bg-white border border-border rounded-2xl p-5 flex flex-col items-center shadow-md w-56 text-foreground relative overflow-hidden">
+               <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-3 relative z-10">Sent to GCash</span>
+               <span className="text-2xl font-bold font-serif relative z-10 tracking-tight">₱192,300</span>
+               <span className="text-[11px] text-[#1D9A5B] font-bold mt-1 relative z-10">Real mid-market rate</span>
+             </div>
+          </div>
+
+          <div id="open-account" className="max-w-3xl mx-auto scroll-mt-24">
             <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-8 text-center">
               Tell us who you are
             </h3>
@@ -151,31 +110,86 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {/* Freelancer Card */}
               <Link to="/freelancers" className="group text-left bg-white border border-border/60 hover:border-border rounded-[1.5rem] p-8 md:p-10 flex flex-col relative overflow-hidden transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-secondary/50 text-foreground flex items-center justify-center mb-8 border border-border/50">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <div className="flex justify-between items-start mb-6">
+                  <h3 className="text-2xl font-bold font-serif text-foreground group-hover:text-accent transition-colors leading-snug">I'm a freelancer</h3>
+                  <div className="w-10 h-10 rounded-full bg-secondary/50 text-foreground flex items-center justify-center border border-border/50">
+                    <Briefcase size={16} />
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold font-serif text-foreground mb-3 group-hover:text-accent transition-colors leading-snug">I'm a freelancer</h3>
-                <p className="text-[15px] text-muted-foreground/90 leading-relaxed mb-10 flex-1">
-                  You're a Filipino earning from clients and companies around the world, paid in dollars.
-                </p>
+                
+                <h4 className="text-sm font-bold text-foreground mb-2">The Goal</h4>
+                <p className="text-[13px] text-muted-foreground leading-relaxed mb-6">Bypass Upwork and PayPal conversion traps. Get paid in USD and keep 100% of it until you're ready to convert.</p>
+                
+                <div className="bg-[#FAFAFA] border border-border rounded-xl p-4 mb-6 mt-4 relative overflow-hidden flex flex-col gap-2 shadow-inner">
+                   <div className="flex justify-between items-center">
+                     <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">USD Routing</span>
+                     <span className="text-[9px] font-bold text-[#1D9A5B] bg-[#1D9A5B]/10 px-2 py-0.5 rounded-full">5.1% APY</span>
+                   </div>
+                   <div className="text-2xl font-bold font-serif">$2,450.00</div>
+                   <div className="flex justify-between items-center mt-2 border-t border-border/60 pt-3">
+                     <span className="text-[10px] font-semibold text-muted-foreground">Current Rate</span>
+                     <span className="text-[10px] font-bold text-foreground">1 USD = ₱55.74</span>
+                   </div>
+                </div>
+
                 <div className="flex items-center gap-2 text-sm font-bold text-foreground group-hover:text-accent transition-colors mt-auto pt-4 border-t border-border/30">
-                  Explore for freelancers <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  See the stack <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
 
               {/* OFW Card */}
               <Link to="/ofws" className="group text-left bg-white border border-border/60 hover:border-border rounded-[1.5rem] p-8 md:p-10 flex flex-col relative overflow-hidden transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-secondary/50 text-foreground flex items-center justify-center mb-8 border border-border/50">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                <div className="flex justify-between items-start mb-6">
+                  <h3 className="text-2xl font-bold font-serif text-foreground group-hover:text-accent transition-colors leading-snug">I'm working abroad</h3>
+                  <div className="w-10 h-10 rounded-full bg-red-50 text-red-600 flex items-center justify-center border border-red-100">
+                    <ShieldAlert size={16} />
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold font-serif text-foreground mb-3 group-hover:text-accent transition-colors leading-snug">I'm working abroad</h3>
-                <p className="text-[15px] text-muted-foreground/90 leading-relaxed mb-10 flex-1">
-                  You're a Filipino living and working overseas, supporting family back home.
-                </p>
+                
+                <div className="bg-[#FAFAFA] border border-border rounded-xl p-4 mb-6 mt-4 relative overflow-hidden flex flex-col gap-2 shadow-inner">
+                   <div className="flex justify-between items-center">
+                     <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Send to Maria</span>
+                     <span className="text-[9px] font-bold text-accent bg-accent/10 px-2 py-0.5 rounded-full">$0 Spread</span>
+                   </div>
+                   <div className="flex items-baseline gap-2">
+                     <span className="text-2xl font-bold font-serif text-foreground">₱16,722</span>
+                     <span className="text-[11px] text-muted-foreground font-medium">for $300</span>
+                   </div>
+                   <div className="flex justify-between items-center mt-2 border-t border-border/60 pt-3">
+                     <span className="text-[10px] font-semibold text-muted-foreground">Arrival</span>
+                     <span className="text-[10px] font-bold text-[#1D9A5B] flex items-center gap-1"><Zap size={10} /> Instant to BPI</span>
+                   </div>
+                </div>
+                
+                <div className="mb-8 flex-1">
+                  <p className="text-[13px] text-muted-foreground leading-relaxed">
+                    Stop letting traditional remitters take a cut of the money meant for your family. Send at the exact mid-market rate, instantly, 24/7.
+                  </p>
+                </div>
+
                 <div className="flex items-center gap-2 text-sm font-bold text-foreground group-hover:text-accent transition-colors mt-auto pt-4 border-t border-border/30">
-                  Explore for OFWs <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  Stop overpaying <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
+            </div>
+            
+            <div className="mt-16 pt-10 border-t border-border/40 flex flex-col items-center">
+              <div className="bg-white border border-border/60 shadow-sm px-6 py-5 rounded-2xl mb-8 max-w-2xl text-center relative overflow-hidden">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-accent"></div>
+                <p className="text-[14px] font-medium text-foreground leading-relaxed">
+                  <span className="font-bold">Most apps quote a low fee, then hide a markup in the exchange rate.</span> Mana sends at the real mid-market rate with no spread — what you see is what your family gets.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground font-bold bg-[#F2F2F2] border border-border px-4 py-2 rounded-full shadow-sm">
+                  <span className="text-xs">No SSN required. Open with PH Passport.</span>
+                </div>
+                <div className="flex items-center gap-2 text-foreground font-bold bg-white border border-border px-4 py-2 rounded-full shadow-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span className="text-xs">Member FDIC</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -190,7 +204,7 @@ export default function App() {
             </p>
             <h2 className="text-4xl md:text-5xl font-bold font-serif leading-tight mb-8">
               <span className="text-foreground block mb-1">Built by immigrants.</span>
-              <span className="text-accent block">Banking without borders.</span>
+              <span className="text-accent block">Backed by US-regulated security.</span>
             </h2>
             
             <div className="space-y-6 text-[15px] leading-relaxed text-muted-foreground mb-10">
@@ -201,41 +215,38 @@ export default function App() {
                 Mana exists to change that. We're building the financial home we wish we'd had the day we landed, so the money you work so hard for is no longer lost to the gaps in between.
               </p>
             </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-10">
+              <div className="flex items-center gap-2">
+                <Check size={16} className="text-accent" />
+                <span className="text-sm font-medium text-foreground">FDIC-insured partner banks</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check size={16} className="text-accent" />
+                <span className="text-sm font-medium text-foreground">Bank-level encryption</span>
+              </div>
+            </div>
 
             <Link to="/about" className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent/80 transition-colors group">
               Read our story <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 md:gap-6">
-            {/* Paco Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-border flex flex-col">
-              <div className="aspect-[4/5] relative bg-muted">
-                <ImageWithFallback
-                  src={pacoImage}
-                  alt="Paco Litonjua"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="p-5 md:p-6 bg-white flex flex-col items-start text-left">
-                <h3 className="font-bold text-foreground font-serif text-lg mb-1">Paco Litonjua</h3>
-                <p className="text-[11px] font-medium text-muted-foreground">Co-Founder</p>
-              </div>
+          <div className="flex flex-col justify-center gap-12 lg:border-l lg:border-border/60 lg:pl-16">
+            <div>
+              <h3 className="font-bold text-foreground font-serif text-2xl md:text-3xl mb-2">Paco Litonjua</h3>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-4">Co-Founder</p>
+              <p className="text-[14px] leading-relaxed text-muted-foreground max-w-sm">
+                Stanford B.S., HBS MBA. Previously built financial products at Figure Technologies, yet struggled to get a basic credit card as an immigrant.
+              </p>
             </div>
 
-            {/* Akshat Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-border flex flex-col">
-              <div className="aspect-[4/5] relative bg-muted">
-                <ImageWithFallback
-                  src={akshatImage}
-                  alt="Akshat Parwal"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="p-5 md:p-6 bg-white flex flex-col items-start text-left">
-                <h3 className="font-bold text-foreground font-serif text-lg mb-1">Akshat Parwal</h3>
-                <p className="text-[11px] font-medium text-muted-foreground">Co-Founder</p>
-              </div>
+            <div>
+              <h3 className="font-bold text-foreground font-serif text-2xl md:text-3xl mb-2">Akshat Parwal</h3>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-4">Co-Founder</p>
+              <p className="text-[14px] leading-relaxed text-muted-foreground max-w-sm">
+                L.E.K. Consulting, HBS MBA. Helped build India's first digital bank (slice), but watched his financial identity reset to zero upon moving to the US.
+              </p>
             </div>
           </div>
         </div>

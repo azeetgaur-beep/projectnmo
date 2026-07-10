@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { Shield, Lock, CreditCard } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import manaLogo from "@/imports/mymana_logo.png";
 
@@ -21,6 +22,20 @@ export function Footer() {
             <p className="text-[13px] text-muted-foreground leading-relaxed max-w-[280px]">
               Mana is a financial technology company and not a bank. Banking without borders for Filipinos everywhere.
             </p>
+            <div className="flex flex-wrap gap-3 mt-2">
+              <div className="flex items-center gap-1.5 border border-border/60 bg-white px-2.5 py-1.5 rounded-lg text-muted-foreground">
+                <Shield size={12} className="text-foreground" />
+                <span className="text-[10px] font-bold">Member FDIC</span>
+              </div>
+              <div className="flex items-center gap-1.5 border border-border/60 bg-white px-2.5 py-1.5 rounded-lg text-muted-foreground">
+                <Lock size={12} className="text-foreground" />
+                <span className="text-[10px] font-bold">Bank-grade Security</span>
+              </div>
+              <div className="flex items-center gap-1.5 border border-border/60 bg-white px-2.5 py-1.5 rounded-lg text-muted-foreground">
+                <CreditCard size={12} className="text-foreground" />
+                <span className="text-[10px] font-bold">Visa® Partner</span>
+              </div>
+            </div>
           </div>
 
           {/* Links Columns */}
@@ -53,9 +68,20 @@ export function Footer() {
         </div>
 
         <div className="pt-10 border-t border-border flex flex-col gap-8">
-          <p className="text-[11px] text-muted-foreground/80 leading-relaxed text-justify md:text-left font-medium">
-            Mana is a financial technology company, not a bank. Banking services are provided by SSB, Member FDIC. Funds deposited at SSB are eligible for FDIC insurance up to $250,000 per depositor, per insured bank, subject to applicable limitations and FDIC rules. The Mana card is issued by our card partner pursuant to a license. Save is a yield feature on your USD wallet, it is not a deposit account, and is not FDIC-insured; the rate is current, may change, and is not guaranteed. Sending and FX services are provided under applicable money-transmitter licenses.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 text-[11px] text-muted-foreground/80 leading-relaxed font-medium">
+            <div>
+              <p className="font-bold text-muted-foreground mb-1.5 uppercase tracking-[0.1em] text-[10px]">Banking Services</p>
+              <p>Mana is a financial technology company, not a bank. Banking services are provided by SSB, Member FDIC. Funds deposited at SSB are eligible for FDIC insurance up to $250,000 per depositor, per insured bank.</p>
+            </div>
+            <div>
+              <p className="font-bold text-muted-foreground mb-1.5 uppercase tracking-[0.1em] text-[10px]">Yield & Savings</p>
+              <p>Save is a yield feature on your USD wallet. It is not a deposit account and is not FDIC-insured. The APY rate is current, may change over time, and is not guaranteed.</p>
+            </div>
+            <div>
+              <p className="font-bold text-muted-foreground mb-1.5 uppercase tracking-[0.1em] text-[10px]">Transfers & Cards</p>
+              <p>The Mana card is issued by our card partner pursuant to a license. Sending and FX services are provided under applicable money-transmitter licenses across all operating regions.</p>
+            </div>
+          </div>
 
           <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4 text-[11px] text-muted-foreground/80 font-medium">
             <p>© 2026 Mana, Inc. All rights reserved.</p>
