@@ -9,3 +9,5 @@
 
   Run `npm run dev` to start the development server.
   # projectnmo
+  
+  *Deployment trigger: QA fixes completed.*
