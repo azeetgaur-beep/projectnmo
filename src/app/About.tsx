@@ -34,7 +34,10 @@ export default function About() {
               <div className="w-full aspect-square relative overflow-hidden bg-muted">
                 <img
                   src={pacoImage}
-                  alt="Paco Litonjua"
+                  alt="Paco Litonjua, Co-Founder of Mana"
+                  width={340}
+                  height={340}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -69,7 +72,10 @@ export default function About() {
               <div className="w-full aspect-square relative overflow-hidden bg-muted">
                 <img
                   src={akshatImage}
-                  alt="Akshat Parwal"
+                  alt="Akshat Parwal, Co-Founder of Mana"
+                  width={340}
+                  height={340}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

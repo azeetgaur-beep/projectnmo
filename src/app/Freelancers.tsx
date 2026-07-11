@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router";
 import { ArrowRight, Check, Clock, ChevronRight, Share, Copy, Lock, Shield, Building } from "lucide-react";
 import { ManaCard } from "./components/ManaCard";
@@ -20,8 +19,8 @@ export default function Freelancers() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-              <a href="/#open-account" className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center inline-block">
-                Open your US account
+              <a href="/#waitlist" className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center inline-block">
+                Join the waitlist
               </a>
             </div>
             <div className="flex items-center gap-4 mt-5 text-xs font-medium text-muted-foreground">
@@ -201,14 +200,14 @@ export default function Freelancers() {
                   Earn 3.5% APY on your idle dollars.
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-6 text-[15px]">
-                  Your earnings grow automatically while remaining 100% liquid. No lock-up periods—withdraw the exact moment a bill lands.
+                  Dollars you keep in Save earn 3.5% APY while remaining fully liquid. Save is a yield feature on your USD wallet — not a deposit account, and not FDIC-insured. The rate may change and is not guaranteed.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-sm font-medium text-foreground">
-                    <Check size={16} className="text-green-500" /> Earns daily, paid monthly
+                    <Check size={16} className="text-green-500" aria-hidden="true" /> Fully liquid — withdraw anytime
                   </li>
                   <li className="flex items-center gap-3 text-sm font-medium text-foreground">
-                    <Check size={16} className="text-green-500" /> 100% liquid, withdraw anytime
+                    <Check size={16} className="text-green-500" aria-hidden="true" /> No lock-up and no minimum
                   </li>
                 </ul>
                 
@@ -218,7 +217,7 @@ export default function Freelancers() {
                 
                 <div className="bg-white border border-border rounded-xl p-4 shadow-sm flex flex-col gap-1">
                   <span className="text-xs font-bold text-foreground">How yield works</span>
-                  <span className="text-[13px] text-muted-foreground leading-relaxed">Your USD balance is held in a sweep network of US partner banks, generating yield from standard interest-bearing accounts. No crypto, no risky lending.</span>
+                  <span className="text-[13px] text-muted-foreground leading-relaxed">Banking services are provided by SSB, Member FDIC. Funds deposited at SSB are eligible for FDIC insurance up to $250,000 per depositor, per insured bank.</span>
                 </div>
               </div>
               
@@ -280,7 +279,7 @@ export default function Freelancers() {
 
                 <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground mb-6 border-l-2 border-border pl-3">
                   <div className="flex items-center gap-1.5"><Shield size={14} className="text-accent" /> Licensed Partners</div>
-                  <div className="flex items-center gap-1.5"><Clock size={14} className="text-accent" /> 24/7 Delivery</div>
+                  <div className="flex items-center gap-1.5"><Clock size={14} className="text-accent" /> Fast transfers</div>
                 </div>
                 
                 <div className="bg-white border border-border rounded-xl p-4 shadow-sm flex flex-col gap-1">
@@ -307,7 +306,7 @@ export default function Freelancers() {
 
                   <div className="bg-[#FAFAFA] border border-border rounded-2xl p-4 shadow-sm mb-3 flex justify-between items-center">
                     <p className="text-xs font-bold text-muted-foreground uppercase">Conversion Fee</p>
-                    <p className="text-xs font-bold text-green-600">FREE</p>
+                    <p className="text-xs font-bold text-foreground">At mid-market rate</p>
                   </div>
 
                   <div className="bg-[#FAFAFA] border border-border rounded-2xl p-4 shadow-sm mb-auto flex justify-between items-center">
@@ -332,10 +331,10 @@ export default function Freelancers() {
           <div className="flex flex-col justify-center">
             <h3 className="text-accent text-xs font-bold uppercase tracking-[0.2em] mb-4">The Mana Card</h3>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-white leading-[1.1] mb-6">
-              Spend globally. Zero foreign transaction fees.
+              Spend globally with your Mana Visa card.
             </h2>
             <p className="text-white/70 leading-relaxed md:text-lg mb-8 max-w-md">
-              A virtual card instantly available in Apple Pay or Google Pay. Spend your USD balance anywhere Visa is accepted, with zero conversion markups.
+              A virtual card you can add to Apple Pay or Google Pay and use wherever Visa is accepted.
             </p>
           </div>
           <div className="relative h-[250px] flex items-center justify-center">
@@ -350,16 +349,16 @@ export default function Freelancers() {
       <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-[2.5rem] font-bold font-serif text-foreground mb-10">
-            Open a US account and manage your earnings in dollars.
+            Join the waitlist for your US dollar account.
           </h2>
-          
+
           <div className="max-w-md mx-auto">
-            <a href="/#open-account" className="block w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm text-center">
-              Open your US account
+            <a href="/#waitlist" className="block w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm text-center">
+              Join the waitlist
             </a>
             <div className="flex flex-col items-center mt-6">
               <p className="text-[12px] font-medium text-muted-foreground mb-4">
-                Mana sends with clear, upfront pricing — what you see is what your family gets.
+                Mana sends at the real mid-market exchange rate — what you see is what your family receives.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-foreground">
                 <div className="flex items-center gap-1.5 bg-[#FAFAFA] border border-border px-3 py-1.5 rounded-full">

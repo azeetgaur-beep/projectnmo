@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router";
 import { ArrowRight, Check, Clock, Building, Smartphone, FileText, Lock, Shield } from "lucide-react";
 import { ManaCard } from "./components/ManaCard";
@@ -20,8 +19,8 @@ export default function OFWs() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-              <a href="/#open-account" className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center inline-block">
-                Open your account
+              <a href="/#waitlist" className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center inline-block">
+                Join the waitlist
               </a>
             </div>
             <div className="flex items-center gap-4 mt-5 text-xs font-medium text-muted-foreground">
@@ -141,8 +140,8 @@ export default function OFWs() {
                   <span className="text-foreground">$200.00</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-border/40 pb-4 text-[#1D9A5B]">
-                  <span>Opaque terms</span>
-                  <span className="font-bold">ZERO</span>
+                  <span>Transfer fee</span>
+                  <span className="font-bold">Free at real rate</span>
                 </div>
                 <div className="flex flex-col mt-8">
                   <span className="text-muted-foreground mb-2">Mom receives exactly</span>
@@ -267,7 +266,7 @@ export default function OFWs() {
 
             <div className="mt-12 bg-white border border-border rounded-xl p-5 shadow-sm">
               <h4 className="text-sm font-bold text-foreground mb-2 flex items-center gap-2"><Shield size={16} className="text-accent" /> Security & Compliance</h4>
-              <p className="text-[13px] text-muted-foreground leading-relaxed">Funds are held in sweep networks of FDIC-insured partner banks. We never invest your money in crypto or volatile assets.</p>
+              <p className="text-[13px] text-muted-foreground leading-relaxed">Mana is a financial technology company, not a bank. Banking services are provided by SSB, Member FDIC. Sending and FX services are provided under applicable money-transmitter licenses.</p>
             </div>
           </div>
         </div>
@@ -277,13 +276,13 @@ export default function OFWs() {
       <section className="py-24 bg-[#0A111F] border-t border-white/5 overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold font-serif text-white mb-6">Give your family direct purchasing power</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-serif text-white mb-6">Spend with your Mana Visa card</h2>
             <p className="text-white/70 leading-relaxed mb-8 max-w-sm">
-              Issue virtual Mana Visa® cards to family members in the Philippines. Set exact limits for groceries or tuition, and track every peso in real-time from your app.
+              A virtual card you can add to Apple Pay or Google Pay and use wherever Visa is accepted — at home or abroad.
             </p>
-            <button className="bg-accent hover:bg-accent/90 text-white font-bold px-6 py-2.5 rounded-xl shadow-sm transition-colors flex items-center gap-2 group text-sm w-max">
-              See the card <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            <Link to="/card" className="bg-accent hover:bg-accent/90 text-white font-bold px-6 py-2.5 rounded-xl shadow-sm transition-colors flex items-center gap-2 group text-sm w-max">
+              See the card <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+            </Link>
           </div>
           <div className="relative h-[250px] flex items-center justify-center">
              <div className="scale-90">
@@ -297,12 +296,12 @@ export default function OFWs() {
       <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-[2.5rem] font-bold font-serif text-foreground mb-10">
-            Control your cross-border transfers. Open your US account today.
+            Control your cross-border transfers. Join the waitlist today.
           </h2>
-          
+
           <div className="relative max-w-sm mx-auto">
-            <a href="/#open-account" className="block w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm text-center">
-              Open your account
+            <a href="/#waitlist" className="block w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm text-center">
+              Join the waitlist
             </a>
             <div className="flex flex-col items-center mt-6">
               <p className="text-[12px] font-medium text-muted-foreground mb-4">

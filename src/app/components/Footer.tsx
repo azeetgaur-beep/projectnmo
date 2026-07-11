@@ -13,7 +13,9 @@ export function Footer() {
             <Link to="/" className="flex items-center group -ml-1">
               <img
                 src={manaLogo}
-                alt="MANA logo"
+                alt=""
+                width={32}
+                height={32}
                 className="h-8 w-auto object-contain opacity-95 group-hover:opacity-100 transition-opacity"
               />
               <span className="ml-2.5 font-serif font-bold text-2xl tracking-tight text-foreground group-hover:text-accent transition-colors mt-0.5">Mana</span>
@@ -54,9 +56,9 @@ export function Footer() {
 
           <div className="col-span-1 md:col-span-3 lg:col-span-2 flex flex-col gap-1">
             <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-3 md:mb-1">Contact</h4>
+            <a href="mailto:hello@mymana.xyz" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">General inquiries</a>
             <a href="mailto:support@mymana.xyz" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">Support</a>
             <a href="mailto:press@mymana.xyz" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">Press</a>
-            <a href="https://twitter.com/mymana" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">Twitter</a>
           </div>
 
           <div className="col-span-1 md:col-span-3 lg:col-span-2 flex flex-col gap-1">

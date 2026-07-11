@@ -39,7 +39,7 @@ export default function BlogPost() {
         
         <h2>What Is the Best Way to Send Money to Philippines in 2026?</h2>
         <p>
-          The best way to send money to the Philippines combines the real mid-market exchange rate with no hidden markup. A transparent near-zero fee structure, and fast delivery to your family's bank account or mobile wallet. Based on our analysis, Mana delivers the most value by combining near-zero fee remittance with zero FX markup and instant delivery to GCash. Maya, and all major Philippine banks.
+          The best way to send money to the Philippines combines the real mid-market exchange rate with transparent pricing and reliable delivery to your family's bank account or mobile wallet. Based on our analysis, Mana is built to deliver strong value by combining clear, upfront remittance pricing with no hidden FX markup.
         </p>
 
         <h2>Remittance Comparison at a Glance</h2>
@@ -118,12 +118,12 @@ export default function BlogPost() {
         
         <h3>1. Mana: Built for Global Filipinos</h3>
         <p>
-          Mana is a financial technology company built specifically for Overseas Filipino Workers, Filipino freelancers, and Filipinos living abroad. Unlike traditional providers that treat remittances as a high-margin product, Mana offers a comprehensive cross-border financial ecosystem with a near-zero fee remittance service.
+          Mana is a financial technology company built specifically for Overseas Filipino Workers, Filipino freelancers, and Filipinos living abroad. Unlike traditional providers that treat remittances as a high-margin product, Mana offers a cross-border financial platform with transparent remittance pricing.
         </p>
         <ul className="list-disc pl-5 mb-8 space-y-2">
-          <li><strong>Fees:</strong> Near-zero fee remittance with transparent pricing at cost.</li>
+          <li><strong>Fees:</strong> Sending money home is free at the real mid-market exchange rate — no hidden FX markup.</li>
           <li><strong>Exchange rate:</strong> Real mid-market exchange rate with no FX markup. You see exactly what your family will receive before you confirm.</li>
-          <li><strong>Speed:</strong> Near-instant delivery to major Philippine mobile wallets like GCash and Maya, or direct to bank accounts within one business day via InstaPay.</li>
+          <li><strong>Speed:</strong> Fast transfers to major Philippine mobile wallets and bank accounts.</li>
           <li><strong>Key features:</strong> A real US dollar account with routing and account numbers in your name. A global Mana Visa card compatible with Apple Pay and Google Pay, and a high-yield savings yield feature on your USD wallet.</li>
         </ul>
 
@@ -156,7 +156,7 @@ export default function BlogPost() {
 
         <h4 className="font-bold text-foreground text-lg mt-8 mb-2">Is it cheaper to send money through a bank or a remittance app?</h4>
         <p>
-          Remittance apps are almost always cheaper than traditional banks. Banks charge wire transfer fees of $25 to $45 plus a 3% to 5% exchange rate markup, making a $1,000 transfer cost $80 to $130. Digital-first providers like Mana and Wise offer near-zero or low transparent fees with real exchange rates, reducing the total cost significantly.
+          Remittance apps are almost always cheaper than traditional banks. Banks charge wire transfer fees of $25 to $45 plus a 3% to 5% exchange rate markup, making a $1,000 transfer cost $80 to $130. Digital-first providers like Mana and Wise offer transparent fees with real exchange rates, reducing the total cost significantly.
         </p>
       </div>
 
@@ -177,7 +177,7 @@ export default function BlogPost() {
             </li>
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
-              <span className="text-sm text-muted-foreground">Near-zero fee remittance with real mid-market exchange rates and zero markup</span>
+              <span className="text-sm text-muted-foreground">Transparent remittance at the real mid-market exchange rate with no hidden FX markup</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>

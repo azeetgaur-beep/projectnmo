@@ -3,20 +3,20 @@ import { Link } from "react-router";
 
 const PROBLEMS = [
   {
-    bad: "You lose 3–5% every transfer",
-    good: "Real mid-market rate, always",
+    bad: "Marked-up exchange rates",
+    good: "Real mid-market rate",
     icon: "₱",
     description: "For decades, traditional remittance services have hidden their true costs in marked-up exchange rates. We believe you should get exactly what you pay for."
   },
   {
-    bad: "3–5 business days to arrive",
-    good: "Minutes, not days",
+    bad: "Slow, opaque transfers",
+    good: "Clear, upfront pricing",
     icon: "⏱",
     description: "Emergencies don't wait for business days. With modern infrastructure, your money moves as fast as a text message, directly to your family when they need it most."
   },
   {
-    bad: "No visibility for your family",
-    good: "Shared family wallet & goals",
+    bad: "Financial life split across borders",
+    good: "One app for USD and PHP",
     icon: "👁",
     description: "Money sent shouldn't just disappear into a black box. MANA gives you and your family shared visibility, letting you build towards common goals together."
   },

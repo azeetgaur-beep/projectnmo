@@ -33,7 +33,7 @@ const POSTS = [
     title: "How to Open a US Bank Account and Receive Payments for Filipino Freelancers",
     date: "Jul 02, 2026",
     tag: "Guide",
-    desc: "Get your own US bank account for Filipino freelancers with Mana. Avoid high fees, hold USD, earn 3.5% APY, and transfer home with transparent pricing today.",
+    desc: "Get your own US dollar account for Filipino freelancers with Mana. Avoid high fees, hold USD, earn 3.5% APY, and transfer home with transparent pricing.",
     slug: "open-us-bank-account-filipino-freelancers"
   },
   {
