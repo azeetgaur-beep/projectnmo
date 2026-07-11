@@ -34,11 +34,11 @@ export default function Blog() {
               Read the full story <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1.5 transition-transform duration-300"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </div>
           </div>
-          <div className="lg:w-[45%] w-full aspect-[4/3] bg-secondary/40 rounded-2xl overflow-hidden relative border border-border/50 order-1 lg:order-2">
+          <div className="lg:w-[45%] w-full aspect-video bg-secondary/40 rounded-2xl overflow-hidden relative border border-border/50 order-1 lg:order-2">
             <img
               src={featuredPost.image}
               alt={featuredPost.imageAlt}
-              className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+              className="w-full h-full object-cover transition-transform duration-500"
               loading="eager"
             />
           </div>
@@ -52,11 +52,11 @@ export default function Blog() {
             to={`/blog/${post.slug}`}
             className="group flex flex-col bg-white border border-border/40 rounded-[1.5rem] overflow-hidden hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-1 hover:border-border/80 transition-all duration-300 h-full"
           >
-            <div className="w-full aspect-[1.6/1] bg-secondary/20 relative overflow-hidden border-b border-border/30">
+            <div className="w-full aspect-video bg-secondary/20 relative overflow-hidden border-b border-border/30">
               <img
                 src={post.image}
                 alt={post.imageAlt}
-                className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                className="w-full h-full object-cover transition-transform duration-500"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/[0.03] transition-colors duration-300" />

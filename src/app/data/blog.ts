@@ -1,12 +1,11 @@
-import remittanceGuideImage from "@/imports/remittance_guide.png";
-import freelancerUsdImage from "@/imports/freelancer_usd.png";
-import ofwBankingImage from "@/imports/ofw_banking.png";
-import nurseGuideImage from "@/imports/nurse_guide.png";
-import cheapestRemittanceImage from "@/imports/cheapest_remittance.png";
-import phpExchangeRateImage from "@/imports/php_exchange_rate.png";
-import bestUsBanksOfwsImage from "@/imports/best_us_banks_ofws.png";
-import bestAppFreeTransferImage from "@/imports/best_app_free_transfer.png";
-import firstUsAccountImage from "@/imports/first_us_account.png";
+import remitGuideProImage from "@/imports/remit_guide_pro.png";
+import cheapRemitProImage from "@/imports/cheap_remit_pro.png";
+import phpExchangeProImage from "@/imports/php_exchange_pro.png";
+import sendMoneyUsPhProImage from "@/imports/send_money_us_ph_pro.png";
+import freelancerUsdProImage from "@/imports/freelancer_usd_pro.png";
+import bestBanksOfwProImage from "@/imports/best_banks_ofw_pro.png";
+import freeSendAppProImage from "@/imports/free_send_app_pro.png";
+import firstUsBankProImage from "@/imports/first_us_bank_pro.png";
 
 export type BlogPost = {
   title: string;
@@ -25,7 +24,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Get the best way to send money to Philippines in 2026. Compare fees, exchange rates, and speed for Wise, Remitly, Western Union, and Mana.",
     slug: "best-way-to-send-money-to-philippines",
-    image: remittanceGuideImage,
+    image: remitGuideProImage,
     imageAlt: "Filipino professional reviewing remittance options on a laptop",
   },
   {
@@ -34,7 +33,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Get the complete guide to the cheapest way to send money to Philippines. Compare fees, hidden FX markups, and transfer speeds across top services to save more.",
     slug: "cheapest-way-to-send-money-to-philippines",
-    image: cheapestRemittanceImage,
+    image: cheapRemitProImage,
     imageAlt: "Guide to lowering remittance costs for families abroad",
   },
   {
@@ -43,7 +42,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Learn how to get the best PHP exchange rate and avoid hidden fees when sending money home. Simple tips help you keep more of your hard-earned money.",
     slug: "how-to-get-best-php-exchange-rate",
-    image: phpExchangeRateImage,
+    image: phpExchangeProImage,
     imageAlt: "Understanding PHP exchange rates and transfer fees",
   },
   {
@@ -52,7 +51,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Get your family more pesos when you learn how to send money from the US to the Philippines. Mana delivers reliable transfers with clear, upfront pricing.",
     slug: "how-to-send-money-to-gcash",
-    image: ofwBankingImage,
+    image: sendMoneyUsPhProImage,
     imageAlt: "Sending money from the US to the Philippines with transparent pricing",
   },
   {
@@ -61,7 +60,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Get your own US dollar account for Filipino freelancers with Mana. Avoid high fees, hold USD, earn 3.5% APY, and transfer home with transparent pricing.",
     slug: "open-us-bank-account-filipino-freelancers",
-    image: freelancerUsdImage,
+    image: freelancerUsdProImage,
     imageAlt: "Filipino freelancer receiving USD client payments",
   },
   {
@@ -70,7 +69,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Find the best US bank for OFW needs with this practical guide to top accounts, low fees, easy transfers, and secure banking for Filipinos working abroad.",
     slug: "6-best-us-banks-for-ofws",
-    image: bestUsBanksOfwsImage,
+    image: bestBanksOfwProImage,
     imageAlt: "OFW comparing US banking options for cross-border finances",
   },
   {
@@ -79,7 +78,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Find the best app to send money to Philippines for free with no hidden fees. Compare top apps, real exchange rates, and tips for secure, fast transfers.",
     slug: "best-app-send-money-ph-free",
-    image: bestAppFreeTransferImage,
+    image: freeSendAppProImage,
     imageAlt: "Comparing remittance apps for sending money to the Philippines",
   },
   {
@@ -88,7 +87,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "You don't need credit to open a bank account — just the right documents. Here's exactly what to bring and how the system really works.",
     slug: "open-first-us-bank-account-no-credit",
-    image: firstUsAccountImage,
+    image: firstUsBankProImage,
     imageAlt: "Guide to opening a first US bank account",
   },
   {
@@ -97,7 +96,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "How money really works in the US — paychecks, credit, taxes, and sending padala home — mapped out for nurses who just arrived.",
     slug: "money-america-starter-guide-nurses",
-    image: nurseGuideImage,
+    image: sendMoneyUsPhProImage,
     imageAlt: "Financial starter guide for Filipino nurses in the United States",
   },
 ];
