@@ -1,5 +1,7 @@
 import { Check, X } from "lucide-react";
-import { Link } from "react-router";
+import { AnchorLink } from "./components/AnchorLink";
+import pacoImage from "@/imports/paco.jpg";
+import akshatImage from "@/imports/akshat.jpg";
 
 const PROBLEMS = [
   {

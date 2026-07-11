@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { Shield, Lock, CreditCard } from "lucide-react";
 import manaLogo from "@/imports/mymanafooter_logo.png";
+import { AnchorLink } from "./AnchorLink";
 
 export function Footer() {
   return (
@@ -51,7 +52,7 @@ export function Footer() {
             <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-3 md:mb-1">Company</h4>
             <Link to="/about" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">About us</Link>
             <Link to="/blog" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">Blog</Link>
-            <Link to="/#faq" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">FAQs</Link>
+            <AnchorLink to="/#faq" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">FAQs</AnchorLink>
           </div>
 
           <div className="col-span-1 md:col-span-3 lg:col-span-2 flex flex-col gap-1">

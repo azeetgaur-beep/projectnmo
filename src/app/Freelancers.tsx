@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { ArrowRight, Check, Clock, ChevronRight, Share, Copy, Lock, Shield, Building } from "lucide-react";
 import { ManaCard } from "./components/ManaCard";
+import { AnchorLink } from "./components/AnchorLink";
 
 export default function Freelancers() {
 
@@ -19,9 +20,9 @@ export default function Freelancers() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-              <a href="/#waitlist" className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center inline-block">
+              <AnchorLink to="/#waitlist" className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center inline-block">
                 Join the waitlist
-              </a>
+              </AnchorLink>
             </div>
             <div className="flex items-center gap-4 mt-5 text-xs font-medium text-muted-foreground">
               <div className="flex items-center gap-1.5">
@@ -56,12 +57,12 @@ export default function Freelancers() {
                 </div>
                 <p className="text-xs text-muted-foreground mb-8">acct •• 6723 · routing •• 0114</p>
                 <div className="flex gap-2">
-                  <button className="flex-1 bg-accent hover:bg-accent/90 text-white text-xs font-bold py-2.5 rounded-xl transition-colors shadow-sm">
+                  <AnchorLink to="/#waitlist" className="flex-1 bg-accent hover:bg-accent/90 text-white text-xs font-bold py-2.5 rounded-xl transition-colors shadow-sm text-center">
                     + Add money
-                  </button>
-                  <button className="flex-1 bg-[#FAFAFA] border border-border hover:bg-white text-foreground text-xs font-bold py-2.5 rounded-xl transition-colors shadow-sm">
+                  </AnchorLink>
+                  <AnchorLink to="/ofws#remittance" className="flex-1 bg-[#FAFAFA] border border-border hover:bg-white text-foreground text-xs font-bold py-2.5 rounded-xl transition-colors shadow-sm text-center">
                     Convert
-                  </button>
+                  </AnchorLink>
                 </div>
               </div>
 
@@ -125,7 +126,7 @@ export default function Freelancers() {
           <div className="lg:w-7/12 flex flex-col gap-16">
             
             {/* Feature 1 */}
-            <div className="bg-[#FAFAFA] border border-border/60 rounded-[2rem] p-10 lg:p-12 overflow-hidden relative flex flex-col">
+            <div id="us-account" className="bg-[#FAFAFA] border border-border/60 rounded-[2rem] p-10 lg:p-12 overflow-hidden relative flex flex-col scroll-mt-28">
               <div className="max-w-md relative z-20">
                 <div className="w-8 h-8 rounded-full bg-foreground text-white flex items-center justify-center font-bold text-sm mb-6">1</div>
                 <h3 className="text-3xl font-bold font-serif leading-tight mb-4 text-foreground">
@@ -185,15 +186,15 @@ export default function Freelancers() {
                       <Copy size={14} className="text-accent" />
                     </div>
                   </div>
-                  <button className="w-full bg-accent text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-sm">
-                    <Share size={14} /> Share details
-                  </button>
+                  <AnchorLink to="/#waitlist" className="w-full bg-accent text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 shadow-sm">
+                    <Share size={14} aria-hidden="true" /> Share details
+                  </AnchorLink>
                 </div>
               </div>
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-[#FAFAFA] border border-border/60 rounded-[2rem] p-10 lg:p-12 shadow-sm flex flex-col justify-center min-h-[600px] mb-8 relative overflow-hidden">
+            <div id="save" className="bg-[#FAFAFA] border border-border/60 rounded-[2rem] p-10 lg:p-12 shadow-sm flex flex-col justify-center min-h-[600px] mb-8 relative overflow-hidden scroll-mt-28">
               <div className="max-w-md relative z-20">
                 <div className="w-8 h-8 rounded-full bg-foreground text-white flex items-center justify-center font-bold text-sm mb-6">2</div>
                 <h3 className="text-3xl font-bold font-serif leading-tight mb-4 text-foreground">
@@ -259,7 +260,7 @@ export default function Freelancers() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-[#FAFAFA] border border-border/60 rounded-[2rem] p-10 lg:p-12 shadow-sm flex flex-col justify-center min-h-[600px] relative overflow-hidden">
+            <div id="send" className="bg-[#FAFAFA] border border-border/60 rounded-[2rem] p-10 lg:p-12 shadow-sm flex flex-col justify-center min-h-[600px] relative overflow-hidden scroll-mt-28">
               <div className="max-w-md relative z-20">
                 <div className="w-8 h-8 rounded-full bg-foreground text-white flex items-center justify-center font-bold text-sm mb-6">3</div>
                 <h3 className="text-3xl font-bold font-serif leading-tight mb-4 text-foreground">
@@ -314,9 +315,9 @@ export default function Freelancers() {
                     <p className="text-xs font-bold text-foreground">In minutes · BPI •• 4521</p>
                   </div>
                   
-                  <button className="w-full bg-accent text-white font-bold py-3.5 rounded-xl shadow-sm text-sm">
+                  <AnchorLink to="/ofws#remittance" className="w-full bg-accent text-white font-bold py-3.5 rounded-xl shadow-sm text-sm text-center">
                     Convert ₱27,870
-                  </button>
+                  </AnchorLink>
                 </div>
               </div>
             </div>
@@ -336,6 +337,9 @@ export default function Freelancers() {
             <p className="text-white/70 leading-relaxed md:text-lg mb-8 max-w-md">
               A virtual card you can add to Apple Pay or Google Pay and use wherever Visa is accepted.
             </p>
+            <Link to="/card" className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold px-6 py-2.5 rounded-xl shadow-sm transition-colors text-sm w-max">
+              See the card <ArrowRight size={14} aria-hidden="true" />
+            </Link>
           </div>
           <div className="relative h-[250px] flex items-center justify-center">
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-75 md:scale-90 opacity-90 hover:opacity-100 transition-opacity">
@@ -353,9 +357,9 @@ export default function Freelancers() {
           </h2>
 
           <div className="max-w-md mx-auto">
-            <a href="/#waitlist" className="block w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm text-center">
+            <AnchorLink to="/#waitlist" className="block w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm text-center">
               Join the waitlist
-            </a>
+            </AnchorLink>
             <div className="flex flex-col items-center mt-6">
               <p className="text-[12px] font-medium text-muted-foreground mb-4">
                 Mana sends at the real mid-market exchange rate — what you see is what your family receives.

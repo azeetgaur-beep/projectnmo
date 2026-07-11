@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { AnchorLink } from "./AnchorLink";
 
 export function WaitlistSection() {
   return (
@@ -20,12 +21,12 @@ export function WaitlistSection() {
         <p className="text-[15px] md:text-lg text-white/75 leading-relaxed mb-10 max-w-xl mx-auto">
           Join the waitlist and we'll let you know the moment Mana is available on the App Store and Google Play.
         </p>
-        <a
-          href="mailto:hello@mymana.xyz?subject=Mana%20Waitlist"
+        <AnchorLink
+          to="mailto:hello@mymana.xyz?subject=Mana%20Waitlist"
           className="inline-flex items-center justify-center gap-2 bg-accent text-white font-bold px-8 py-4 rounded-full hover:bg-accent/90 transition-all shadow-lg text-sm md:text-base"
         >
           Join the waitlist <ArrowRight size={16} aria-hidden="true" />
-        </a>
+        </AnchorLink>
         <p className="text-[11px] text-white/50 mt-6 font-medium">
           No spam. Just a note when your account is ready.
         </p>

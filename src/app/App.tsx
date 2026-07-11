@@ -1,5 +1,6 @@
 import { ArrowRight, Briefcase, Check, ShieldAlert, Sparkles, Zap } from "lucide-react";
 import { Link } from "react-router";
+import { AnchorLink } from "@/app/components/AnchorLink";
 import { FaqSection } from "@/app/components/FaqSection";
 import { FoundersSection } from "@/app/components/FoundersSection";
 import { MoneyFlowVisual } from "@/app/components/MoneyFlowVisual";
@@ -14,12 +15,12 @@ export default function App() {
         <p className="text-xs md:text-sm font-semibold flex items-center justify-center gap-2 flex-wrap">
           <Sparkles size={13} className="text-accent shrink-0" aria-hidden="true" />
           Mana is launching soon in the US and Philippines.
-          <a
-            href="#waitlist"
+          <AnchorLink
+            to="#waitlist"
             className="underline underline-offset-2 hover:text-accent transition-colors"
           >
             Join the waitlist →
-          </a>
+          </AnchorLink>
         </p>
       </div>
 
@@ -39,18 +40,18 @@ export default function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-            <a
-              href="#waitlist"
+            <AnchorLink
+              to="#waitlist"
               className="inline-flex items-center justify-center gap-2 bg-foreground text-background font-bold px-8 py-3.5 rounded-full hover:bg-foreground/90 transition-all shadow-sm text-sm md:text-base w-full sm:w-auto"
             >
               Join the waitlist <ArrowRight size={16} aria-hidden="true" />
-            </a>
-            <a
-              href="#open-account"
+            </AnchorLink>
+            <AnchorLink
+              to="#open-account"
               className="inline-flex items-center justify-center gap-2 bg-white border border-border text-foreground font-bold px-8 py-3.5 rounded-full hover:bg-[#FAFAFA] transition-all text-sm md:text-base w-full sm:w-auto"
             >
               See how it works
-            </a>
+            </AnchorLink>
           </div>
 
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-muted-foreground mb-12 md:mb-16">

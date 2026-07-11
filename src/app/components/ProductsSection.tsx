@@ -1,5 +1,5 @@
 import { ArrowRight, CreditCard, DollarSign, PiggyBank, Send } from "lucide-react";
-import { Link } from "react-router";
+import { AnchorLink } from "./AnchorLink";
 
 const PRODUCTS = [
   {
@@ -7,7 +7,7 @@ const PRODUCTS = [
     title: "US dollar account",
     description:
       "A real USD account to receive ACH and wire payments. Hold your earnings in dollars until you're ready to convert.",
-    href: "/freelancers",
+    href: "/freelancers#us-account",
     cta: "For freelancers",
   },
   {
@@ -15,7 +15,7 @@ const PRODUCTS = [
     title: "High-yield Save",
     description:
       "Earn 3.5% APY on dollars in your Save balance. Fully liquid with no lock-up — withdraw anytime.",
-    href: "/freelancers",
+    href: "/freelancers#save",
     cta: "See how Save works",
   },
   {
@@ -23,7 +23,7 @@ const PRODUCTS = [
     title: "Send to the Philippines",
     description:
       "Transfer home at the real mid-market exchange rate with clear, upfront pricing — no hidden FX markup.",
-    href: "/ofws",
+    href: "/ofws#remittance",
     cta: "View remittance",
   },
   {
@@ -61,7 +61,7 @@ export function ProductsSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {PRODUCTS.map((product) => (
-            <Link
+            <AnchorLink
               key={product.title}
               to={product.href}
               className="group bg-white border border-border/60 hover:border-border rounded-2xl p-6 md:p-7 flex flex-col transition-all duration-300 hover:shadow-md"
@@ -79,7 +79,7 @@ export function ProductsSection() {
                 {product.cta}
                 <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
               </span>
-            </Link>
+            </AnchorLink>
           ))}
         </div>
       </div>

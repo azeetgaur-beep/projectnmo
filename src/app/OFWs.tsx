@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { ArrowRight, Check, Clock, Building, Smartphone, FileText, Lock, Shield } from "lucide-react";
 import { ManaCard } from "./components/ManaCard";
+import { AnchorLink } from "./components/AnchorLink";
 
 export default function OFWs() {
 
