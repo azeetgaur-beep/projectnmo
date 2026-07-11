@@ -11,18 +11,18 @@ export default function OFWs() {
       <section className="relative pt-24 pb-32 md:pt-40 md:pb-40 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-24 items-center">
           <div className="relative z-10">
-            <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-bold font-serif leading-[1.1] mb-8 text-foreground tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-[4.5rem] font-bold font-serif leading-[1.1] mb-8 text-foreground tracking-tight">
               Direct transfers <br />
               <span className="text-accent">at the real exchange rate.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-12 max-w-2xl">
-              Send USD to the Philippines at the true mid-market rate with a transparent flat fee. Keep your savings in US dollars until the exact moment you need to transfer.
+              Send USD to the Philippines with transparent, upfront pricing. Keep your savings in US dollars until the exact moment you need to transfer.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-              <button className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center">
+              <a href="/#open-account" className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center inline-block">
                 Open your account
-              </button>
+              </a>
             </div>
             <div className="flex items-center gap-4 mt-5 text-xs font-medium text-muted-foreground">
               <div className="flex items-center gap-1.5">
@@ -31,7 +31,7 @@ export default function OFWs() {
               </div>
               <div className="flex items-center gap-1.5">
                 <Shield size={12} className="text-accent" />
-                <span>Member FDIC</span>
+                <span>Visa® Card globally accepted</span>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function OFWs() {
             {/* The Truth (Right) */}
             <div className="flex-1 p-10 md:p-16 lg:p-20 bg-[#FAFAFA] flex flex-col justify-center relative overflow-hidden">
               <h3 className="text-accent text-xs font-bold uppercase tracking-[0.2em] mb-4 relative z-10">The Truth</h3>
-              <h2 className="text-3xl md:text-4xl font-serif text-foreground leading-tight mb-12 relative z-10">Mana sends at the exact mid-market rate. What you see is what lands.</h2>
+              <h2 className="text-3xl md:text-4xl font-serif text-foreground leading-tight mb-12 relative z-10">Mana sends with clear, upfront pricing. What you see is what lands.</h2>
               
               <div className="space-y-6 text-sm font-medium relative z-10">
                 <div className="flex justify-between items-center border-b border-border/40 pb-4">
@@ -141,7 +141,7 @@ export default function OFWs() {
                   <span className="text-foreground">$200.00</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-border/40 pb-4 text-[#1D9A5B]">
-                  <span>Hidden FX markup</span>
+                  <span>Opaque terms</span>
                   <span className="font-bold">ZERO</span>
                 </div>
                 <div className="flex flex-col mt-8">
@@ -156,29 +156,28 @@ export default function OFWs() {
 
       <section className="pb-24 bg-background">
         <div className="max-w-6xl mx-auto px-6">
-
-          <h3 className="text-lg font-bold font-serif text-foreground mb-6">Real payouts. Real speed.</h3>
+          <h3 className="text-lg font-bold font-serif text-foreground mb-6">Real payouts. Reliable speed.</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white border border-border shadow-sm rounded-2xl p-5 flex flex-col">
               <div className="flex justify-between items-center mb-4">
                 <span className="font-bold text-foreground">BPI</span>
                 <span className="text-xs font-bold text-[#1D9A5B] bg-[#1D9A5B]/10 px-2 py-1 rounded-full">Delivered</span>
               </div>
-              <p className="text-[13px] font-medium text-muted-foreground">Arrived in 14 seconds</p>
+              <p className="text-[13px] font-medium text-muted-foreground">Arrived successfully</p>
             </div>
             <div className="bg-white border border-border shadow-sm rounded-2xl p-5 flex flex-col">
               <div className="flex justify-between items-center mb-4">
                 <span className="font-bold text-blue-500">GCash</span>
                 <span className="text-xs font-bold text-[#1D9A5B] bg-[#1D9A5B]/10 px-2 py-1 rounded-full">Delivered</span>
               </div>
-              <p className="text-[13px] font-medium text-muted-foreground">Arrived in 3 seconds</p>
+              <p className="text-[13px] font-medium text-muted-foreground">Arrived successfully</p>
             </div>
             <div className="bg-white border border-border shadow-sm rounded-2xl p-5 flex flex-col">
               <div className="flex justify-between items-center mb-4">
                 <span className="font-bold text-emerald-500">Maya</span>
                 <span className="text-xs font-bold text-[#1D9A5B] bg-[#1D9A5B]/10 px-2 py-1 rounded-full">Delivered</span>
               </div>
-              <p className="text-[13px] font-medium text-muted-foreground">Arrived in 8 seconds</p>
+              <p className="text-[13px] font-medium text-muted-foreground">Arrived successfully</p>
             </div>
           </div>
         </div>
@@ -302,16 +301,16 @@ export default function OFWs() {
           </h2>
           
           <div className="relative max-w-sm mx-auto">
-            <button className="w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm">
+            <a href="/#open-account" className="block w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm text-center">
               Open your account
-            </button>
+            </a>
             <div className="flex flex-col items-center mt-6">
               <p className="text-[12px] font-medium text-muted-foreground mb-4">
-                Most apps quote a low fee, then hide a markup in the exchange rate. Mana sends at the real mid-market rate.
+                Mana sends with clear, upfront pricing — what you see is what your family gets.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-foreground">
                 <div className="flex items-center gap-1.5 bg-[#FAFAFA] border border-border px-3 py-1.5 rounded-full">
-                  <span>No SSN required. Open with PH Passport.</span>
+                  <span>Built for Filipinos abroad</span>
                 </div>
                 <div className="flex items-center gap-1.5 bg-[#FAFAFA] border border-border px-3 py-1.5 rounded-full">
                   <Shield size={12} className="text-accent" />

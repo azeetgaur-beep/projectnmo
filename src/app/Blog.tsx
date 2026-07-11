@@ -23,17 +23,17 @@ const POSTS = [
     slug: "how-to-get-best-php-exchange-rate"
   },
   {
-    title: "How to Send Money from US to GCash: Zero Fees, Instant Delivery",
+    title: "How to Send Money from US to the Philippines: Clear, Upfront Pricing",
     date: "Jul 03, 2026",
     tag: "Guide",
-    desc: "Get your family more pesos when you learn how to send money from US to GCash. Mana delivers ₱11,148 vs ₱10,847 with zero fees and real mid-market rates.",
+    desc: "Get your family more pesos when you learn how to send money from the US to the Philippines. Mana delivers reliable transfers with clear, upfront pricing.",
     slug: "how-to-send-money-to-gcash"
   },
   {
     title: "How to Open a US Bank Account and Receive Payments for Filipino Freelancers",
     date: "Jul 02, 2026",
     tag: "Guide",
-    desc: "Get your own US bank account for Filipino freelancers with Mana. Avoid high fees, hold USD, earn 3.5% APY, and transfer home with zero FX markups today.",
+    desc: "Get your own US bank account for Filipino freelancers with Mana. Avoid high fees, hold USD, earn 3.5% APY, and transfer home with transparent pricing today.",
     slug: "open-us-bank-account-filipino-freelancers"
   },
   {

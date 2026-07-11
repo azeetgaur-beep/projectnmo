@@ -11,18 +11,18 @@ export default function Freelancers() {
       <section className="relative pt-24 pb-32 md:pt-40 md:pb-40 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-24 items-center">
           <div className="relative z-10">
-            <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-bold font-serif leading-[1.1] mb-8 text-foreground tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-[4.5rem] font-bold font-serif leading-[1.1] mb-8 text-foreground tracking-tight">
               Your global career. <br />
               <span className="text-accent">Your US stack.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-12 max-w-2xl">
-              Stop losing 3-5% to Upwork and PayPal conversions. Get paid directly into a US account, earn 3.5% APY, and send pesos to GCash at the real mid-market rate.
+              Stop losing 3-5% to Upwork and PayPal conversions. Get paid directly into a US account, earn yield on your balance, and send money to the Philippines with clear, upfront pricing.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-              <button className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center">
+              <a href="/#open-account" className="bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm flex-1 text-center inline-block">
                 Open your US account
-              </button>
+              </a>
             </div>
             <div className="flex items-center gap-4 mt-5 text-xs font-medium text-muted-foreground">
               <div className="flex items-center gap-1.5">
@@ -213,7 +213,6 @@ export default function Freelancers() {
                 </ul>
                 
                 <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground mb-6 border-l-2 border-border pl-3">
-                  <div className="flex items-center gap-1.5"><Shield size={14} className="text-accent" /> Member FDIC</div>
                   <div className="flex items-center gap-1.5"><Lock size={14} className="text-accent" /> Bank-level security</div>
                 </div>
                 
@@ -265,28 +264,28 @@ export default function Freelancers() {
               <div className="max-w-md relative z-20">
                 <div className="w-8 h-8 rounded-full bg-foreground text-white flex items-center justify-center font-bold text-sm mb-6">3</div>
                 <h3 className="text-3xl font-bold font-serif leading-tight mb-4 text-foreground">
-                  Send to GCash or BPI instantly with $0 fees.
+                  Send to the Philippines with transparent, upfront pricing.
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-6 text-[15px]">
-                  Convert only what you need at the real mid-market rate (the one you see on Google). Zero spreads. Zero hidden margins.
+                  Convert only what you need. Send money home with clear, upfront pricing and no opaque terms.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-sm font-medium text-foreground">
-                    <Check size={16} className="text-green-500" /> True mid-market rate, $0 markup
+                    <Check size={16} className="text-green-500" /> Transparent pricing
                   </li>
                   <li className="flex items-center gap-3 text-sm font-medium text-foreground">
-                    <Check size={16} className="text-green-500" /> Arrives in minutes via InstaPay
+                    <Check size={16} className="text-green-500" /> Reliable transfers to major banks
                   </li>
                 </ul>
 
                 <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground mb-6 border-l-2 border-border pl-3">
-                  <div className="flex items-center gap-1.5"><Shield size={14} className="text-accent" /> BSP Regulated Partners</div>
+                  <div className="flex items-center gap-1.5"><Shield size={14} className="text-accent" /> Licensed Partners</div>
                   <div className="flex items-center gap-1.5"><Clock size={14} className="text-accent" /> 24/7 Delivery</div>
                 </div>
                 
                 <div className="bg-white border border-border rounded-xl p-4 shadow-sm flex flex-col gap-1">
-                  <span className="text-xs font-bold text-foreground">The Mana Guarantee</span>
-                  <span className="text-[13px] text-muted-foreground leading-relaxed">We never hide a markup in the exchange rate. We use the real mid-market rate and charge a single, transparent flat fee per transfer.</span>
+                  <span className="text-xs font-bold text-foreground">The Mana Promise</span>
+                  <span className="text-[13px] text-muted-foreground leading-relaxed">Send money home with clear, upfront pricing. No opaque terms or hidden fees.</span>
                 </div>
               </div>
               
@@ -355,16 +354,16 @@ export default function Freelancers() {
           </h2>
           
           <div className="max-w-md mx-auto">
-            <button className="w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm">
+            <a href="/#open-account" className="block w-full bg-accent text-white font-bold px-8 py-3.5 rounded-xl hover:bg-accent/90 transition-all shadow-sm text-center">
               Open your US account
-            </button>
+            </a>
             <div className="flex flex-col items-center mt-6">
               <p className="text-[12px] font-medium text-muted-foreground mb-4">
-                Most apps quote a low fee, then hide a markup in the exchange rate. Mana sends at the real mid-market rate.
+                Mana sends with clear, upfront pricing — what you see is what your family gets.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-foreground">
                 <div className="flex items-center gap-1.5 bg-[#FAFAFA] border border-border px-3 py-1.5 rounded-full">
-                  <span>No SSN required. Open with PH Passport.</span>
+                  <span>Built for Filipinos abroad</span>
                 </div>
                 <div className="flex items-center gap-1.5 bg-[#FAFAFA] border border-border px-3 py-1.5 rounded-full">
                   <Shield size={12} className="text-accent" />

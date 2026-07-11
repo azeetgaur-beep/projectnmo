@@ -56,7 +56,7 @@ export function Footer() {
             <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-3 md:mb-1">Contact</h4>
             <a href="mailto:support@mymana.xyz" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">Support</a>
             <a href="mailto:press@mymana.xyz" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">Press</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">Twitter</a>
+            <a href="https://twitter.com/mymana" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors py-2 md:py-1">Twitter</a>
           </div>
 
           <div className="col-span-1 md:col-span-3 lg:col-span-2 flex flex-col gap-1">

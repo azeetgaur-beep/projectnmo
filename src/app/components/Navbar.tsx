@@ -38,7 +38,7 @@ export function Navbar() {
               Products
               <ChevronDown size={14} className="opacity-40 group-hover:rotate-180 transition-transform" />
             </button>
-            <div className="absolute top-[calc(100%-10px)] left-1/2 -translate-x-1/2 w-48 bg-white border border-border shadow-lg rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-3 flex flex-col z-50">
+            <div className="absolute top-[calc(100%-10px)] left-1/2 -translate-x-1/2 w-48 bg-white border border-border shadow-lg rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-3 flex flex-col z-50 before:absolute before:-top-4 before:left-0 before:right-0 before:h-4">
               <Link to="/freelancers" className={`px-5 py-2.5 text-[13px] font-medium transition-colors ${currentPath === '/freelancers' ? 'text-accent bg-muted/30' : 'text-foreground hover:bg-muted/50 hover:text-accent'}`}>
                 For Freelancers
               </Link>
