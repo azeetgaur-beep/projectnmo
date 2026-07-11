@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import manaLogo from "@/imports/mymana_logo.png";
 
 const NAV_LINKS = [
@@ -21,7 +20,7 @@ export function Navbar() {
         {/* Left: Logo */}
         <div className="flex-1 flex items-center justify-start">
           <Link to="/" className="flex items-center">
-            <ImageWithFallback
+            <img
               src={manaLogo}
               alt="MANA logo"
               className="h-9 w-auto object-contain"

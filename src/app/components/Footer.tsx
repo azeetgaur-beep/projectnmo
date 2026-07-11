@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 import { Shield, Lock, CreditCard } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import manaLogo from "@/imports/mymana_logo.png";
+import manaLogo from "@/imports/mymanafooter_logo.png";
 
 export function Footer() {
   return (
@@ -12,7 +11,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-12 lg:col-span-4 flex flex-col gap-6 lg:pr-12">
             <Link to="/" className="flex items-center group -ml-1">
-              <ImageWithFallback
+              <img
                 src={manaLogo}
                 alt="MANA logo"
                 className="h-8 w-auto object-contain opacity-95 group-hover:opacity-100 transition-opacity"

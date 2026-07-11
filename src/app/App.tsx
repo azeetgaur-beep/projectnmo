@@ -1,9 +1,5 @@
 import { useState } from "react";
-import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/components/ui/accordion";
-import manaLogo from "@/imports/mymana_logo.png";
-import pacoImage from "@/imports/paco.jpg";
-import akshatImage from "@/imports/akshat.jpg";
 import {
   ArrowRight,
   Loader2,
@@ -74,11 +70,11 @@ export default function App() {
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6 text-foreground max-w-4xl mx-auto font-serif tracking-tight">
             Earn in dollars. Send in pesos. <br />
-            <span className="text-accent">Build wealth across borders.</span>
+            <span className="text-accent">Manage your cross-border income.</span>
           </h1>
 
           <p className="text-[17px] md:text-[22px] text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto mb-10 font-medium">
-            Stop losing your hard work to hidden remittance fees and forced conversions. Get a real US account, keep your earnings in dollars, and send to GCash or any PH bank at the true exchange rate.
+            Avoid hidden remittance spreads and mandatory conversions. Open a US account with your Philippine passport, hold your balance in USD, and transfer to any PH bank at the mid-market exchange rate.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground mb-16">
@@ -127,8 +123,8 @@ export default function App() {
                   </div>
                 </div>
                 
-                <h4 className="text-sm font-bold text-foreground mb-2">The Goal</h4>
-                <p className="text-[13px] text-muted-foreground leading-relaxed mb-6">Bypass Upwork and PayPal conversion traps. Get paid in USD and keep 100% of it until you're ready to convert.</p>
+                <h4 className="text-sm font-bold text-foreground mb-2">How it works</h4>
+                <p className="text-[13px] text-muted-foreground leading-relaxed mb-6">Receive USD via ACH or wire with zero inbound fees. Hold your balance in dollars until you decide to convert.</p>
                 
                 <div className="bg-[#FAFAFA] border border-border rounded-xl p-4 mb-6 mt-4 relative overflow-hidden flex flex-col gap-2 shadow-inner">
                    <div className="flex justify-between items-center">
@@ -173,7 +169,7 @@ export default function App() {
                 
                 <div className="mb-8 flex-1">
                   <p className="text-[13px] text-muted-foreground leading-relaxed">
-                    Stop letting traditional remitters take a cut of the money meant for your family. Send at the exact mid-market rate, instantly, 24/7.
+                    Send money directly to the Philippines using the real mid-market exchange rate. Transfers to GCash and major banks arrive in minutes.
                   </p>
                 </div>
 
@@ -210,10 +206,10 @@ export default function App() {
             
             <div className="space-y-6 text-[15px] leading-relaxed text-muted-foreground mb-10">
               <p>
-                As immigrants ourselves, we know what it's like to move across the world for a better opportunity — and to watch high fees, opaque terms, and a financial life split across two countries quietly chip away at what you've earned.
+                As immigrants, we experienced firsthand how high fees and opaque exchange rates affect cross-border financial lives.
               </p>
               <p>
-                Mana exists to change that. We're building the financial home we wish we'd had the day we landed, so the money you work so hard for is no longer lost to the gaps in between.
+                Mana was built to provide a secure, transparent alternative for managing USD income and sending money to the Philippines, backed by US-regulated banking infrastructure.
               </p>
             </div>
             

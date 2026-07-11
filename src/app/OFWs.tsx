@@ -12,11 +12,11 @@ export default function OFWs() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-24 items-center">
           <div className="relative z-10">
             <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-bold font-serif leading-[1.1] mb-8 text-foreground tracking-tight">
-              The secure bridge <br />
-              <span className="text-accent">to your family.</span>
+              Direct transfers <br />
+              <span className="text-accent">at the real exchange rate.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-12 max-w-2xl">
-              We send at the true mid-market rate with zero percentage fees. Because every peso you earn belongs to your family, not the bank.
+              Send USD to the Philippines at the true mid-market rate with a transparent flat fee. Keep your savings in US dollars until the exact moment you need to transfer.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 max-w-md">
@@ -298,7 +298,7 @@ export default function OFWs() {
       <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-[2.5rem] font-bold font-serif text-foreground mb-10">
-            Start sending more money home. Guaranteed.
+            Control your cross-border transfers. Open your US account today.
           </h2>
           
           <div className="relative max-w-sm mx-auto">

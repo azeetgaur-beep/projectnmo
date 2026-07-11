@@ -351,7 +351,7 @@ export default function Freelancers() {
       <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-[2.5rem] font-bold font-serif text-foreground mb-10">
-            Join 10,000+ freelancers keeping 100% of their earnings.
+            Open a US account and manage your earnings in dollars.
           </h2>
           
           <div className="max-w-md mx-auto">

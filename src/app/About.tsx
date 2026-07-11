@@ -8,7 +8,7 @@ import iitLogo from "@/imports/iit-bombay.png";
 import figureLogo from "@/imports/figure.png";
 import sliceLogo from "@/imports/slice.png";
 import lekLogo from "@/imports/lek.jpg";
-import { ImageWithFallback } from "./components/figma/ImageWithFallback";
+
 
 export default function About() {
   return (
@@ -32,7 +32,7 @@ export default function About() {
             {/* Paco Card */}
             <div className="bg-white border border-border shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 rounded-3xl overflow-hidden flex flex-col group max-w-[340px] w-full mx-auto">
               <div className="w-full aspect-square relative overflow-hidden bg-muted">
-                <ImageWithFallback
+                <img
                   src={pacoImage}
                   alt="Paco Litonjua"
                   className="w-full h-full object-cover"
@@ -67,7 +67,7 @@ export default function About() {
             {/* Akshat Card */}
             <div className="bg-white border border-border shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 rounded-3xl overflow-hidden flex flex-col group max-w-[340px] w-full mx-auto">
               <div className="w-full aspect-square relative overflow-hidden bg-muted">
-                <ImageWithFallback
+                <img
                   src={akshatImage}
                   alt="Akshat Parwal"
                   className="w-full h-full object-cover"
