@@ -1,7 +1,7 @@
-import pacoImage from "@/imports/paco.jpg";
-import akshatImage from "@/imports/akshat.jpg";
-import stanfordLogo from "@/imports/stanford.png";
-import hbsLogo from "@/imports/HBS-styleguide-primary-logo-3.png";
+import remittanceGuideImage from "@/imports/remittance_guide.png";
+import freelancerUsdImage from "@/imports/freelancer_usd.png";
+import ofwBankingImage from "@/imports/ofw_banking.png";
+import nurseGuideImage from "@/imports/nurse_guide.png";
 
 export type BlogPost = {
   title: string;
@@ -20,7 +20,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Get the best way to send money to Philippines in 2026. Compare fees, exchange rates, and speed for Wise, Remitly, Western Union, and Mana.",
     slug: "best-way-to-send-money-to-philippines",
-    image: pacoImage,
+    image: remittanceGuideImage,
     imageAlt: "Filipino professional reviewing remittance options on a laptop",
   },
   {
@@ -29,7 +29,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Get the complete guide to the cheapest way to send money to Philippines. Compare fees, hidden FX markups, and transfer speeds across top services to save more.",
     slug: "cheapest-way-to-send-money-to-philippines",
-    image: akshatImage,
+    image: remittanceGuideImage,
     imageAlt: "Guide to lowering remittance costs for families abroad",
   },
   {
@@ -38,7 +38,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Learn how to get the best PHP exchange rate and avoid hidden fees when sending money home. Simple tips help you keep more of your hard-earned money.",
     slug: "how-to-get-best-php-exchange-rate",
-    image: pacoImage,
+    image: remittanceGuideImage,
     imageAlt: "Understanding PHP exchange rates and transfer fees",
   },
   {
@@ -47,7 +47,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Get your family more pesos when you learn how to send money from the US to the Philippines. Mana delivers reliable transfers with clear, upfront pricing.",
     slug: "how-to-send-money-to-gcash",
-    image: akshatImage,
+    image: ofwBankingImage,
     imageAlt: "Sending money from the US to the Philippines with transparent pricing",
   },
   {
@@ -56,7 +56,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Get your own US dollar account for Filipino freelancers with Mana. Avoid high fees, hold USD, earn 3.5% APY, and transfer home with transparent pricing.",
     slug: "open-us-bank-account-filipino-freelancers",
-    image: pacoImage,
+    image: freelancerUsdImage,
     imageAlt: "Filipino freelancer receiving USD client payments",
   },
   {
@@ -65,7 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Find the best US bank for OFW needs with this practical guide to top accounts, low fees, easy transfers, and secure banking for Filipinos working abroad.",
     slug: "6-best-us-banks-for-ofws",
-    image: akshatImage,
+    image: ofwBankingImage,
     imageAlt: "OFW comparing US banking options for cross-border finances",
   },
   {
@@ -74,7 +74,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "Find the best app to send money to Philippines for free with no hidden fees. Compare top apps, real exchange rates, and tips for secure, fast transfers.",
     slug: "best-app-send-money-ph-free",
-    image: pacoImage,
+    image: remittanceGuideImage,
     imageAlt: "Comparing remittance apps for sending money to the Philippines",
   },
   {
@@ -83,7 +83,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "You don't need credit to open a bank account — just the right documents. Here's exactly what to bring and how the system really works.",
     slug: "open-first-us-bank-account-no-credit",
-    image: stanfordLogo,
+    image: ofwBankingImage,
     imageAlt: "Guide to opening a first US bank account",
   },
   {
@@ -92,7 +92,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Guide",
     desc: "How money really works in the US — paychecks, credit, taxes, and sending padala home — mapped out for nurses who just arrived.",
     slug: "money-america-starter-guide-nurses",
-    image: hbsLogo,
+    image: nurseGuideImage,
     imageAlt: "Financial starter guide for Filipino nurses in the United States",
   },
 ];
