@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import manaLogo from "@/imports/mymana_logo.png";
 
 const PRODUCT_LINKS = [
+  { label: "All products", href: "/#products" },
   { label: "For Freelancers", href: "/freelancers" },
   { label: "For OFWs", href: "/ofws" },
   { label: "The Mana Card", href: "/card" },

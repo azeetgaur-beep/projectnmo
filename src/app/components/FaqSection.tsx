@@ -36,7 +36,14 @@ export function FaqSection({
           </h2>
           {subtitle && (
             <p className="text-[15px] text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              {subtitle}
+              Everything you need to know about Mana. Can't find an answer?{" "}
+              <a
+                href="mailto:support@mymana.xyz"
+                className="font-semibold text-foreground hover:text-accent transition-colors underline underline-offset-2"
+              >
+                Reach out
+              </a>{" "}
+              and we'll help.
             </p>
           )}
         </div>

@@ -1,6 +1,9 @@
 import { ArrowRight, Briefcase, Check, ShieldAlert, Sparkles, Zap } from "lucide-react";
 import { Link } from "react-router";
 import { FaqSection } from "@/app/components/FaqSection";
+import { FoundersSection } from "@/app/components/FoundersSection";
+import { MoneyFlowVisual } from "@/app/components/MoneyFlowVisual";
+import { ProductsSection } from "@/app/components/ProductsSection";
 import { WaitlistSection } from "@/app/components/WaitlistSection";
 
 export default function App() {
@@ -21,18 +24,36 @@ export default function App() {
       </div>
 
       {/* HERO */}
-      <section className="relative overflow-hidden pt-24 pb-32 md:pt-40 md:pb-40">
+      <section className="relative overflow-hidden pt-20 pb-20 md:pt-32 md:pb-28">
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
+          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-5">
+            Financial services built for Filipinos everywhere
+          </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 text-foreground max-w-4xl mx-auto font-serif tracking-tight">
             Earn in dollars. Send in pesos.{" "}
             <span className="text-accent">Manage your cross-border income.</span>
           </h1>
 
-          <p className="text-[17px] md:text-[22px] text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto mb-10 font-medium">
-            A real US dollar account to hold your earnings, earn yield on your balance, and send money home. Built for Filipinos everywhere.
+          <p className="text-[17px] md:text-[22px] text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto mb-8 font-medium">
+            A real US dollar account to hold your earnings, earn high yield, and send money home. Built for Filipinos everywhere.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-muted-foreground mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+            <a
+              href="#waitlist"
+              className="inline-flex items-center justify-center gap-2 bg-foreground text-background font-bold px-8 py-3.5 rounded-full hover:bg-foreground/90 transition-all shadow-sm text-sm md:text-base w-full sm:w-auto"
+            >
+              Join the waitlist <ArrowRight size={16} aria-hidden="true" />
+            </a>
+            <a
+              href="#open-account"
+              className="inline-flex items-center justify-center gap-2 bg-white border border-border text-foreground font-bold px-8 py-3.5 rounded-full hover:bg-[#FAFAFA] transition-all text-sm md:text-base w-full sm:w-auto"
+            >
+              See how it works
+            </a>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-muted-foreground mb-12 md:mb-16">
             <div className="flex items-center gap-2 text-foreground font-bold bg-[#FAFAFA] border border-border px-4 py-2 rounded-full shadow-sm">
               <span className="text-xs">Built for Filipinos abroad</span>
             </div>
@@ -54,39 +75,13 @@ export default function App() {
               </svg>
               <span className="text-xs">Earn 3.5% APY</span>
             </div>
+            <div className="flex items-center gap-2 text-foreground font-bold bg-white border border-border px-4 py-2 rounded-full shadow-sm">
+              <Check size={12} className="text-accent" aria-hidden="true" />
+              <span className="text-xs">Visa card included</span>
+            </div>
           </div>
 
-          {/* CONCRETE MONEY MOVEMENT FLOW */}
-          <div
-            className="max-w-4xl mx-auto mb-24 hidden md:flex items-center justify-center gap-4"
-            aria-label="Example money flow from USD earnings to Philippines transfer"
-          >
-            <div className="bg-white border border-border rounded-2xl p-5 flex flex-col items-center shadow-sm w-56">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-3">
-                Incoming ACH
-              </span>
-              <span className="text-2xl font-bold font-serif text-foreground">+$3,450.00</span>
-              <span className="text-[11px] text-muted-foreground font-medium mt-1">from Upwork</span>
-            </div>
-            <ArrowRight className="text-muted-foreground/30 flex-shrink-0" size={24} aria-hidden="true" />
-            <div className="bg-white border border-border rounded-2xl p-5 flex flex-col items-center shadow-sm w-56">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-3">
-                Mana USD Wallet
-              </span>
-              <span className="text-2xl font-bold font-serif text-foreground">$3,450.00</span>
-              <span className="text-[11px] text-accent font-bold mt-1 bg-accent/10 px-2 py-0.5 rounded-full">
-                Earning 3.5% APY
-              </span>
-            </div>
-            <ArrowRight className="text-muted-foreground/30 flex-shrink-0" size={24} aria-hidden="true" />
-            <div className="bg-white border border-border rounded-2xl p-5 flex flex-col items-center shadow-md w-56 text-foreground">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-3">
-                Sent to Philippines
-              </span>
-              <span className="text-2xl font-bold font-serif tracking-tight">₱192,300</span>
-              <span className="text-[11px] text-[#1D9A5B] font-bold mt-1">Real mid-market rate</span>
-            </div>
-          </div>
+          <MoneyFlowVisual />
 
           <div id="open-account" className="max-w-3xl mx-auto scroll-mt-24">
             <h2 className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-8 text-center">
@@ -96,7 +91,7 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <Link
                 to="/freelancers"
-                className="h-full group text-left bg-white border border-border/60 hover:border-border rounded-[1.5rem] p-8 md:p-10 flex flex-col transition-all duration-300"
+                className="h-full group text-left bg-white border border-border/60 hover:border-border rounded-[1.5rem] p-8 md:p-10 flex flex-col transition-all duration-300 hover:shadow-md"
               >
                 <div className="flex justify-between items-start mb-6">
                   <h3 className="text-2xl font-bold font-serif text-foreground group-hover:text-accent transition-colors leading-snug">
@@ -135,7 +130,7 @@ export default function App() {
 
               <Link
                 to="/ofws"
-                className="h-full group text-left bg-white border border-border/60 hover:border-border rounded-[1.5rem] p-8 md:p-10 flex flex-col transition-all duration-300"
+                className="h-full group text-left bg-white border border-border/60 hover:border-border rounded-[1.5rem] p-8 md:p-10 flex flex-col transition-all duration-300 hover:shadow-md"
               >
                 <div className="flex justify-between items-start mb-6">
                   <h3 className="text-2xl font-bold font-serif text-foreground group-hover:text-accent transition-colors leading-snug">
@@ -189,69 +184,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* WHO WE ARE */}
-      <section className="py-24 md:py-32 bg-background" aria-labelledby="who-we-are-heading">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6">
-              Who we are
-            </p>
-            <h2
-              id="who-we-are-heading"
-              className="text-4xl md:text-5xl font-bold font-serif leading-tight mb-8"
-            >
-              <span className="text-foreground block mb-1">Built by immigrants.</span>
-              <span className="text-accent block">Banking without borders.</span>
-            </h2>
-
-            <div className="space-y-6 text-[15px] leading-relaxed text-muted-foreground mb-10">
-              <p>
-                As immigrants ourselves, we know what it's like to move across the world for a better opportunity — and to watch high fees, opaque terms, and a financial life split across two countries quietly chip away at what you've earned.
-              </p>
-              <p>
-                Mana exists to change that. We're building the financial home we wish we'd had the day we landed, so the money you work so hard for is no longer lost to the gaps in between.
-              </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-10">
-              <div className="flex items-center gap-2">
-                <Check size={16} className="text-accent shrink-0" aria-hidden="true" />
-                <span className="text-sm font-medium text-foreground">SSB, Member FDIC</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check size={16} className="text-accent shrink-0" aria-hidden="true" />
-                <span className="text-sm font-medium text-foreground">Bank-level encryption</span>
-              </div>
-            </div>
-
-            <Link
-              to="/about"
-              className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent/80 transition-colors group"
-            >
-              Read our story <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-            </Link>
-          </div>
-
-          <div className="flex flex-col justify-center gap-12 lg:border-l lg:border-border/60 lg:pl-16">
-            <div>
-              <h3 className="font-bold text-foreground font-serif text-2xl md:text-3xl mb-2">Paco Litonjua</h3>
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-4">Co-Founder</p>
-              <p className="text-[14px] leading-relaxed text-muted-foreground max-w-sm">
-                Stanford B.S., HBS MBA. Previously built financial products at Figure Technologies, yet struggled to get a basic credit card as an immigrant.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-foreground font-serif text-2xl md:text-3xl mb-2">Akshat Parwal</h3>
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-4">Co-Founder</p>
-              <p className="text-[14px] leading-relaxed text-muted-foreground max-w-sm">
-                L.E.K. Consulting, HBS MBA. Helped build India's first digital bank (slice), but watched his financial identity reset to zero upon moving to the US.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <ProductsSection />
+      <FoundersSection />
       <WaitlistSection />
       <FaqSection />
     </div>
